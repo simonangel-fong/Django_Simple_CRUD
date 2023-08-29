@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-2v=98e%+@%cn1nm#2^_hy%(@3e8tx-232+a1$m!0jq5sjuy^s@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = [env("ALLOWED_HOSTS")]
+ALLOWED_HOSTS = [env("ALLOWED_HOSTS"),]
 
 
 # Application definition
@@ -84,9 +84,9 @@ DATABASES = {
     # overrides the default db
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': env("P_DB_NAME"),  # db name
-        'USER': env("P_USER"),
-        'PASSWORD': env("P_PWD"),
+        'NAME': env("MYSQL_DATABASE_NAME"),  # db name
+        'USER': env("MYSQL_USERNAME"),
+        'PASSWORD': env("MYSQL_PASSWORD"),
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {

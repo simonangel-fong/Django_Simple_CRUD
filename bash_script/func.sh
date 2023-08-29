@@ -101,10 +101,10 @@ load_code() {
 create_env_file() {
 
     P_PROJECT_NAME=$1
-    P_DB_NAME=$2
-    P_USER=$3
-    P_PWD=$4
-    P_HOST_IP=$5
+    P_HOST_IP=$2
+    P_DB_NAME=$3
+    P_USER=$4
+    P_PWD=$5
 
     ###########################################################
     ## Djnago project configuration

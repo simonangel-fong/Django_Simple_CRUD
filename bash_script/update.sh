@@ -39,7 +39,7 @@ echo -e "$(date +'%Y-%m-%d %R') Download codes from github completed.\n"
 # ## Create .env file within project dir
 # ###########################################################
 echo -e "\n$(date +'%Y-%m-%d %R') Create .env file start ..."
-create_env_file $P_PROJECT_NAME $P_DB_NAME $P_USER $P_PWD
+create_env_file $P_PROJECT_NAME $P_HOST_IP $P_DB_NAME $P_USER $P_PWD 
 echo -e "$(date +'%Y-%m-%d %R') Create .env file completed.\n"
 
 # ###########################################################
