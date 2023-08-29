@@ -328,6 +328,7 @@ SUP_GUN"
     echo -e "$(date +'%Y-%m-%d %R') Apply configuration."
     sudo supervisorctl reread # tell supervisor read configuration file
     sudo supervisorctl update # update supervisor configuration
+    sudo supervisorctl reload # Restarted supervisord
     sudo supervisorctl status # verify configuration status
 
     # read -p "Press Enter to continue..."
