@@ -104,6 +104,7 @@ create_env_file() {
     P_DB_NAME=$2
     P_USER=$3
     P_PWD=$4
+    P_HOST_IP=$5
 
     ###########################################################
     ## Djnago project configuration
@@ -112,16 +113,13 @@ create_env_file() {
 
     env_file=~/${P_PROJECT_NAME}/${P_PROJECT_NAME}/${P_PROJECT_NAME}/.env
     sudo bash -c "sudo cat >$env_file <<ENV
+DEBUG=False
+ALLOWED_HOSTS=${P_HOST_IP}
 MYSQL_DATABASE_NAME=${P_DB_NAME}
 MYSQL_USERNAME=${P_USER}
 MYSQL_PASSWORD=${P_PWD}
 MYSQL_HOST=localhost
 MYSQL_PORT=3306
-
-EMAIL_HOST=smtp.gmail.com
-EMAIL_HOST_USER=test@gmail.com
-EMAIL_HOST_PASSWORD=password
-RECIPIENT_ADDRESS=recipient@gmail.com
 ENV"
 
     echo -e $"\nThe .env file has been created. (Path: $env_file)"
