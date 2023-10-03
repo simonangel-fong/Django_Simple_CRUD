@@ -1,5 +1,12 @@
+# exclude vscode dir
 .vscode/
+# venv dir
 env/
+# cache dir
 __pycache__/
+
+# include the sqlites for this simple demo
 db.sqlite3
-.env
+
+# his simple demo not using env variables
+# .env

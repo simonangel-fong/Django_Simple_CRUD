@@ -1,3 +1,3 @@
-# demoProj
+# Repo2DemoSimpleDjango
 
-A demo project of django app.
+This is a repository of a demo of simple django project.
