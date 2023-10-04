@@ -4,9 +4,3 @@
 env/
 # cache dir
 __pycache__/
-
-# include the sqlites for this simple demo
-db.sqlite3
-
-# his simple demo not using env variables
-# .env
